@@ -41,7 +41,11 @@ const projects: Project[] = [
             'Streaming chat UI built on the shared component library'
         ],
         stack: ['TypeScript', 'React', 'Node.js', 'MCP', 'Claude API', 'Ollama'],
-        featured: true
+        featured: true,
+        links: {
+            code: 'https://github.com/olegpolyakov/ai',
+            live: 'https://ai.olegpoliakov.dev'
+        }
     },
     {
         slug: 'tasks',
