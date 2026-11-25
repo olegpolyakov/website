@@ -61,7 +61,7 @@ const projects: Project[] = [
     },
     {
         slug: 'ui',
-        name: 'OP UI',
+        name: 'UI Components',
         type: 'Library',
         summary: 'An accessible, themeable React component library with 40+ components, used by every app in the suite — including this site.',
         highlights: [
@@ -70,7 +70,11 @@ const projects: Project[] = [
             'Popovers, drag-and-drop, and transitions built on Floating UI and dnd-kit'
         ],
         stack: ['React', 'TypeScript', 'Sass', 'Floating UI', 'Vite'],
-        featured: true
+        featured: true,
+        links: {
+            code: 'https://github.com/olegpolyakov/ui',
+            live: 'olegpolyakov.github.io/ui'
+        }
     },
     {
         slug: 'editor',
