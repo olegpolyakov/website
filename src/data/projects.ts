@@ -56,6 +56,7 @@ const projects: Project[] = [
         stack: ['React', 'Node.js', 'MCP', 'Zod', 'i18next'],
         featured: true,
         links: {
+            code: 'https://github.com/olegpolyakov/tasks',
             live: 'https://tasks.olegpoliakov.dev'
         }
     },
