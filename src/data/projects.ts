@@ -73,7 +73,7 @@ const projects: Project[] = [
         featured: true,
         links: {
             code: 'https://github.com/olegpolyakov/ui',
-            live: 'olegpolyakov.github.io/ui'
+            live: 'https://olegpolyakov.github.io/ui'
         }
     },
     {
