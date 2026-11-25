@@ -31,15 +31,6 @@
     height: 32px;
 }
 
-.name {
-    font-family: 'Comfortaa', sans-serif;
-    font-weight: 700;
-
-    @include media.to(xs) {
-        display: none;
-    }
-}
-
 .nav {
     display: none;
 

@@ -1,4 +1,4 @@
-import { Flex, Heading, Link } from '@olegpolyakov/ui';
+import { Flex, Link } from '@olegpolyakov/ui';
 
 import Logo from '@/assets/logo.svg';
 import SocialLinks from '@/components/SocialLinks';
@@ -23,13 +23,6 @@ export default function Header() {
                     aria-label={`${profile.name} — home`}
                 >
                     <Logo className={styles.logo} />
-
-                    <Heading
-                        as="span"
-                        className={styles.name}
-                        content={profile.handle}
-                        size="l"
-                    />
                 </a>
 
                 <Flex
