@@ -1,0 +1,46 @@
+@use 'pkg:@olegpolyakov/ui/styles/media';
+
+.root {
+    padding-block: 64px 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--ui-space-xl);
+
+    @include media.from(m) {
+        padding-block: 80px;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        gap: 64px;
+    }
+
+    a {
+        color: inherit;
+    }
+}
+
+.photo {
+    width: 112px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    flex-shrink: 0;
+
+    @include media.from(m) {
+        width: 240px;
+    }
+}
+
+.content {
+    max-width: 640px;
+}
+
+.title {
+    font-size: clamp(36px, 6vw, 56px);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+.summary {
+    line-height: 1.6;
+}

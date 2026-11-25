@@ -1,0 +1,30 @@
+@use 'pkg:@olegpolyakov/ui/styles/media';
+
+.timeline {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    padding-block: var(--ui-space-l);
+    display: grid;
+    gap: var(--ui-space-xs);
+    border-top: 1px solid var(--ui-border-color);
+
+    &:last-child {
+        border-bottom: 1px solid var(--ui-border-color);
+    }
+
+    @include media.from(m) {
+        grid-template-columns: 160px 1fr;
+        gap: var(--ui-space-xl);
+    }
+}
+
+.period {
+    margin: 0;
+    padding-top: 2px;
+}

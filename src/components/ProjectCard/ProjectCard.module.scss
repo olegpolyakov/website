@@ -1,0 +1,40 @@
+.root {
+    height: 100%;
+    padding: var(--ui-space-l);
+    display: flex;
+    flex-direction: column;
+    gap: var(--ui-space-m);
+    transition: transform 150ms ease;
+
+    &:hover {
+        transform: translateY(-2px);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        transition: none;
+
+        &:hover {
+            transform: none;
+        }
+    }
+}
+
+.name {
+    flex-wrap: wrap-reverse;
+}
+
+.image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.highlights {
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    margin-top: auto;
+    padding-top: var(--ui-space-xs);
+}

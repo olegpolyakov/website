@@ -1,0 +1,18 @@
+@use 'pkg:@olegpolyakov/ui/styles/media';
+
+.card {
+    padding: 48px var(--ui-space-l);
+
+    @include media.from(m) {
+        padding: 72px var(--ui-space-xxl);
+    }
+}
+
+.title {
+    font-size: clamp(28px, 4vw, 40px);
+    line-height: 1.2;
+}
+
+.text {
+    max-width: 520px;
+}

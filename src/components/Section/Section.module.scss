@@ -1,0 +1,10 @@
+@use 'pkg:@olegpolyakov/ui/styles/media';
+
+.root {
+    padding-block: 48px;
+    scroll-margin-top: 72px;
+
+    @include media.from(m) {
+        padding-block: 80px;
+    }
+}

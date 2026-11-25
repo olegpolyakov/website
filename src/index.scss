@@ -1,0 +1,28 @@
+@use 'pkg:@olegpolyakov/ui';
+@use 'pkg:@olegpolyakov/ui/styles';
+@use 'pkg:@olegpolyakov/ui/styles/media';
+
+:root {
+    --container-width: 1120px;
+    --container-padding: var(--ui-space-m);
+
+    @include media.from(m) {
+        --container-padding: var(--ui-space-xl);
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+
+    @media (prefers-reduced-motion: reduce) {
+        scroll-behavior: auto;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: styles.var(background-color);
+    color: styles.var(foreground-color);
+    -webkit-font-smoothing: antialiased;
+}
